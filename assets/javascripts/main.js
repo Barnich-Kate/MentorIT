@@ -237,3 +237,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+// Get references to the chat window, the toggle button, and the close button
+  const chatWindow = document.getElementById('chat1');
+  const chatToggleBtn = document.getElementById('chatToggleBtn');
+  const closeChatBtn = document.getElementById('closeChatBtn');
+
+  // Function to toggle the chat window's visibility
+  function toggleChatWindow() {
+    if (chatWindow.style.display === 'none') {
+      chatWindow.style.display = 'block';
+    } else {
+      chatWindow.style.display = 'none';
+    }
+  }
+
+  // Add click event listener to the toggle button
+  chatToggleBtn.addEventListener('click', toggleChatWindow);
+
+  // Add click event listener to the close button
+  closeChatBtn.addEventListener('click', toggleChatWindow);
