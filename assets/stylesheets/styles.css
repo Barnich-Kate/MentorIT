@@ -1004,6 +1004,7 @@ section {
   .testimonials .testimonial-item {
     padding: 30px;
     margin: 15px;
+    flex-direction: column;
   }
 
   .testimonials .testimonial-item .testimonial-img {
