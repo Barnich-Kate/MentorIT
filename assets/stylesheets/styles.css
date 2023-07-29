@@ -2169,18 +2169,18 @@ FILTERS
 
 #chatToggleBtn {
   position: fixed;
-  bottom: 20px;
-  right: 100px;
+  bottom: 13px;
+  right: 80px;
   z-index: 9999;
 }
 
 #chat1 {
   position: fixed;
-  bottom: 20px;
+  bottom: 13px;
   right: 20px;
   z-index: 9999;
   width: 382px;
-  height: 655px;
+  height: 555px;
 }
 
 
@@ -2258,4 +2258,35 @@ color: #39c0ed;
 
 #chat1 .form-outline .form-control~.form-label {
   color: #bfbfbf;
+}
+
+.btn-custom {
+  font-size: 13px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+.bnt-chat {
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  background-color: #222222;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+.bnt-chat:hover {
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  color: #fff;
 }
