@@ -1,13 +1,12 @@
 /* Zra - Technology & Business Services Free Landing Page Template */
 
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 :root {
-  --font-default: 'Poppins', sans-serif;
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Poppins', sans-serif;
+  --font-default: "Poppins", sans-serif;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
 }
 
 :root {
@@ -74,7 +73,6 @@ section {
   color: #6f6f6f;
 }
 
-
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -121,11 +119,11 @@ section {
   text-decoration: underline;
 }
 
-.breadcrumbs nav ol li+li {
+.breadcrumbs nav ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs nav ol li+li::before {
+.breadcrumbs nav ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: var(--color-secondary);
@@ -180,16 +178,17 @@ section {
 
 #preloader:before {
   content: "";
-    position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    border: 18px solid #fff;
-    border-color: var(--color-primary) transparent var(--color-primary) transparent;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: animate-preloader 1.5s linear infinite;
-    animation: animate-preloader 1.5s linear infinite;
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 18px solid #fff;
+  border-color: var(--color-primary) transparent var(--color-primary)
+    transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1.5s linear infinite;
+  animation: animate-preloader 1.5s linear infinite;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -246,7 +245,6 @@ section {
 }
 
 @media (max-width: 575px) {
-
   .topbar .contact-info i a,
   .topbar .contact-info i span {
     font-size: 13px;
@@ -336,7 +334,7 @@ section {
     position: relative;
   }
 
-  .navbar>ul>li {
+  .navbar > ul > li {
     white-space: nowrap;
     padding: 10px 0 10px 28px;
   }
@@ -363,7 +361,7 @@ section {
     margin-left: 5px;
   }
 
-  .navbar>ul>li>a:before {
+  .navbar > ul > li > a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -377,7 +375,7 @@ section {
   }
 
   .navbar a:hover:before,
-  .navbar li:hover>a:before,
+  .navbar li:hover > a:before,
   .navbar .active:before {
     visibility: visible;
     width: 100%;
@@ -386,7 +384,7 @@ section {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #fff;
   }
 
@@ -425,11 +423,11 @@ section {
 
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .navbar .dropdown ul li:hover > a {
     color: var(--color-secondary);
   }
 
-  .navbar .dropdown:hover>ul {
+  .navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -441,7 +439,7 @@ section {
     visibility: hidden;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -454,13 +452,12 @@ section {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 @media (min-width: 1280px) {
-
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
@@ -517,7 +514,7 @@ section {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #fff;
   }
 
@@ -546,8 +543,8 @@ section {
     background-color: #f85a40;
   }
 
-  .navbar .dropdown>.dropdown-active,
-  .navbar .dropdown .dropdown>.dropdown-active {
+  .navbar .dropdown > .dropdown-active,
+  .navbar .dropdown .dropdown > .dropdown-active {
     display: block;
   }
 
@@ -647,7 +644,10 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  background: radial-gradient(
+    var(--color-primary) 50%,
+    rgba(0, 131, 116, 0.4) 52%
+  );
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -777,12 +777,12 @@ section {
   background-color: var(--color-primary);
 }
 
-
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/cta-bg.jpg") center center;
   background-size: cover;
   padding: 150px 60px;
   border-radius: 0px;
@@ -805,7 +805,10 @@ section {
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  background: radial-gradient(
+    var(--color-primary) 50%,
+    rgba(0, 131, 116, 0.4) 52%
+  );
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -904,7 +907,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -922,7 +924,7 @@ section {
   border-radius: 10px;
   display: flex;
 }
-.testimonials .testimonial-item .info-box{
+.testimonials .testimonial-item .info-box {
   min-width: 276px;
 }
 
@@ -1012,7 +1014,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
@@ -1082,7 +1083,6 @@ section {
   font-size: 14px;
   margin: 0 2px;
 }
-
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
@@ -1236,21 +1236,21 @@ section {
   color: #fff;
 }
 
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-bg.jpg) center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/hero-bg.jpg) center center;
   background-size: cover;
   padding: 60px 0 0 0;
 }
-.hero .caption{
+.hero .caption {
   height: 370px;
 }
-.hero .circle{
+.hero .circle {
   color: #f96f59;
 }
 @media (min-width: 1365px) {
@@ -1264,7 +1264,7 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   color: #fff;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1322,12 +1322,11 @@ section {
   .hero .btn-watch-video {
     font-size: 14px;
   }
-  .icon-boxes .card-two{
+  .icon-boxes .card-two {
     margin-top: var(--bs-gutter-y);
     margin-bottom: 0px;
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    padding-right: calc(var(--bs-gutter-x) * .5);
-
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
   }
 }
 @media (min-width: 768px) {
@@ -1335,7 +1334,7 @@ section {
   .hero .btn-watch-video {
     font-size: 14px;
   }
-  .icon-boxes .card-two{
+  .icon-boxes .card-two {
     margin-top: -20px;
     margin-bottom: -20px;
   }
@@ -1377,7 +1376,7 @@ section {
   font-size: 24px;
 }
 
-.hero .icon-box .title a {
+.hero .icon-box .title {
   color: #f85a40;
   transition: 0.3s;
 }
@@ -1574,7 +1573,7 @@ section {
   margin: 0;
 }
 
-.blog .blog-details .meta-top ul li+li {
+.blog .blog-details .meta-top ul li + li {
   padding-left: 20px;
 }
 
@@ -1633,7 +1632,7 @@ section {
   display: inline-block;
 }
 
-.blog .blog-details .meta-bottom .tags li+li::before {
+.blog .blog-details .meta-bottom .tags li + li::before {
   padding-right: 6px;
   color: var(--color-default);
   content: ",";
@@ -1699,7 +1698,7 @@ section {
   color: var(--color-default);
 }
 
-.blog .sidebar .sidebar-item+.sidebar-item {
+.blog .sidebar .sidebar-item + .sidebar-item {
   margin-top: 40px;
 }
 
@@ -1711,14 +1710,14 @@ section {
   border-radius: 50px;
 }
 
-.blog .sidebar .search-form form input[type=text] {
+.blog .sidebar .search-form form input[type="text"] {
   border: 0;
   padding: 4px;
   border-radius: 50px;
   width: calc(100% - 60px);
 }
 
-.blog .sidebar .search-form form input[type=text]:focus {
+.blog .sidebar .search-form form input[type="text"]:focus {
   outline: none;
 }
 
@@ -1752,7 +1751,7 @@ section {
   padding: 0;
 }
 
-.blog .sidebar .categories ul li+li {
+.blog .sidebar .categories ul li + li {
   padding-top: 10px;
 }
 
@@ -1771,7 +1770,7 @@ section {
   font-size: 14px;
 }
 
-.blog .sidebar .recent-posts .post-item+.post-item {
+.blog .sidebar .recent-posts .post-item + .post-item {
   margin-top: 15px;
 }
 
@@ -1955,57 +1954,57 @@ FILTERS
 -------------------------------------------------------------*/
 
 .btn {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .grid {
-    position: relative;
-    width: 100%;
-    background: #fff;
-    color: #666666;
-    border-radius: 2px;
-    margin-bottom: 25px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  background: #fff;
+  color: #666666;
+  border-radius: 2px;
+  margin-bottom: 25px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .grid .grid-body {
-    padding: 15px 20px 15px 20px;
-    font-size: 0.9em;
-    line-height: 1.9em;
+  padding: 15px 20px 15px 20px;
+  font-size: 0.9em;
+  line-height: 1.9em;
 }
 
 .search table tr td.rate {
-    color: #f39c12;
-    line-height: 50px;
+  color: #f39c12;
+  line-height: 50px;
 }
 
 .search table tr:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .search table tr td.image {
-	width: 50px;
+  width: 50px;
 }
 
 .search table tr td img {
-	width: 50px;
-	height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .search table tr td.rate {
-	color: #f39c12;
-	line-height: 50px;
+  color: #f39c12;
+  line-height: 50px;
 }
 
 .search table tr td.price {
-	font-size: 1.5em;
-	line-height: 50px;
+  font-size: 1.5em;
+  line-height: 50px;
 }
 
 .search #price1,
 .search #price2 {
-	display: inline;
-	font-weight: 600;
+  display: inline;
+  font-weight: 600;
 }
 
 .checkbox-title {
@@ -2032,7 +2031,6 @@ FILTERS
   border: 1px solid #888;
   width: 80%;
 }
-
 
 /* Стилизация кнопки закрытия */
 .close {
@@ -2183,80 +2181,79 @@ FILTERS
   height: 555px;
 }
 
-
-#chat1 .form-outline .form-control~.form-notch div {
-pointer-events: none;
-border: 1px solid;
-border-color: #eee;
-box-sizing: border-box;
-background: transparent;
+#chat1 .form-outline .form-control ~ .form-notch div {
+  pointer-events: none;
+  border: 1px solid;
+  border-color: #eee;
+  box-sizing: border-box;
+  background: transparent;
 }
 
-#chat1 .form-outline .form-control~.form-notch .form-notch-leading {
-left: 0;
-top: 0;
-height: 100%;
-border-right: none;
-border-radius: .65rem 0 0 .65rem;
+#chat1 .form-outline .form-control ~ .form-notch .form-notch-leading {
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-right: none;
+  border-radius: 0.65rem 0 0 0.65rem;
 }
 
-#chat1 .form-outline .form-control~.form-notch .form-notch-middle {
-flex: 0 0 auto;
-max-width: calc(100% - 1rem);
-height: 100%;
-border-right: none;
-border-left: none;
+#chat1 .form-outline .form-control ~ .form-notch .form-notch-middle {
+  flex: 0 0 auto;
+  max-width: calc(100% - 1rem);
+  height: 100%;
+  border-right: none;
+  border-left: none;
 }
 
-#chat1 .form-outline .form-control~.form-notch .form-notch-trailing {
-flex-grow: 1;
-height: 100%;
-border-left: none;
-border-radius: 0 .65rem .65rem 0;
+#chat1 .form-outline .form-control ~ .form-notch .form-notch-trailing {
+  flex-grow: 1;
+  height: 100%;
+  border-left: none;
+  border-radius: 0 0.65rem 0.65rem 0;
 }
 
-#chat1 .form-outline .form-control:focus~.form-notch .form-notch-leading {
-border-top: 0.125rem solid #39c0ed;
-border-bottom: 0.125rem solid #39c0ed;
-border-left: 0.125rem solid #39c0ed;
+#chat1 .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+  border-top: 0.125rem solid #39c0ed;
+  border-bottom: 0.125rem solid #39c0ed;
+  border-left: 0.125rem solid #39c0ed;
 }
 
-#chat1 .form-outline .form-control:focus~.form-notch .form-notch-leading,
-#chat1 .form-outline .form-control.active~.form-notch .form-notch-leading {
-border-right: none;
-transition: all 0.2s linear;
+#chat1 .form-outline .form-control:focus ~ .form-notch .form-notch-leading,
+#chat1 .form-outline .form-control.active ~ .form-notch .form-notch-leading {
+  border-right: none;
+  transition: all 0.2s linear;
 }
 
-#chat1 .form-outline .form-control:focus~.form-notch .form-notch-middle {
-border-bottom: 0.125rem solid;
-border-color: #39c0ed;
+#chat1 .form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+  border-bottom: 0.125rem solid;
+  border-color: #39c0ed;
 }
 
-#chat1 .form-outline .form-control:focus~.form-notch .form-notch-middle,
-#chat1 .form-outline .form-control.active~.form-notch .form-notch-middle {
-border-top: none;
-border-right: none;
-border-left: none;
-transition: all 0.2s linear;
+#chat1 .form-outline .form-control:focus ~ .form-notch .form-notch-middle,
+#chat1 .form-outline .form-control.active ~ .form-notch .form-notch-middle {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  transition: all 0.2s linear;
 }
 
-#chat1 .form-outline .form-control:focus~.form-notch .form-notch-trailing {
-border-top: 0.125rem solid #39c0ed;
-border-bottom: 0.125rem solid #39c0ed;
-border-right: 0.125rem solid #39c0ed;
+#chat1 .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+  border-top: 0.125rem solid #39c0ed;
+  border-bottom: 0.125rem solid #39c0ed;
+  border-right: 0.125rem solid #39c0ed;
 }
 
-#chat1 .form-outline .form-control:focus~.form-notch .form-notch-trailing,
-#chat1 .form-outline .form-control.active~.form-notch .form-notch-trailing {
-border-left: none;
-transition: all 0.2s linear;
+#chat1 .form-outline .form-control:focus ~ .form-notch .form-notch-trailing,
+#chat1 .form-outline .form-control.active ~ .form-notch .form-notch-trailing {
+  border-left: none;
+  transition: all 0.2s linear;
 }
 
-#chat1 .form-outline .form-control:focus~.form-label {
-color: #39c0ed;
+#chat1 .form-outline .form-control:focus ~ .form-label {
+  color: #39c0ed;
 }
 
-#chat1 .form-outline .form-control~.form-label {
+#chat1 .form-outline .form-control ~ .form-label {
   color: #bfbfbf;
 }
 
