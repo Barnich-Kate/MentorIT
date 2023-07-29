@@ -515,6 +515,15 @@ label.valid {
   margin-right: 20px;
   margin-top: 10px; }
 
+  .back-arrow {
+    width: 28px;
+    margin: 26px 0 0 25px;
+  }
+
+  .back-arrow:hover {
+    width: 25px;
+  }
+
 @media screen and (max-width: 1200px) {
   .container {
     width: calc( 100% - 30px);
