@@ -23,3 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = '404.html';
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const consultation = document.getElementById('contactForm');
+    consultation.addEventListener('submit', function (event) {
+
+        event.preventDefault();
+
+        window.location.href = '404.html';
+    });
+});
