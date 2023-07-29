@@ -1226,6 +1226,7 @@ section {
   margin: 10px;
   border: 2px solid #000;
   color: #000;
+  cursor: pointer;
 }
 
 .recent-posts .rp-btn:hover {
