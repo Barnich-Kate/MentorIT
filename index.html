@@ -197,21 +197,20 @@
             </div>
             <!-- Три чекбокса -->
             <div>
-              <label>Виберіть тип вашої перевірки:</label>
-              <div>
-                <input type="checkbox" id="checkbox1">
-                <label for="checkbox1">Автоперевірка</label>
-              </div>
-              <div>
-                <input type="checkbox" id="checkbox2">
-                <label for="checkbox2">Перевірка ментором та фідбек у письмовій формі</label>
-              </div>
-              <div>
-                <input type="checkbox" id="checkbox3">
-                <label for="checkbox3">Перевірка ментором та розгорнута відеоконсультація з детальним фідбеком по
-                  кожному пункту та рекомендаціями</label>
-              </div>
-            </div>
+            <label>Виберіть тип вашої перевірки:</label>
+                <div>
+                  <input type="radio" id="checkbox1" name="checkType" value="Автоперевірка">
+                  <label for="checkbox1">Автоперевірка</label>
+                </div>
+                <div>
+                  <input type="radio" id="checkbox2" name="checkType" value="Перевірка ментором та фідбек у письмовій формі">
+                  <label for="checkbox2">Перевірка ментором та фідбек у письмовій формі</label>
+                </div>
+                <div>
+                  <input type="radio" id="checkbox3" name="checkType" value="Перевірка ментором та розгорнута відеоконсультація з детальним фідбеком по кожному пункту та рекомендаціями">
+                  <label for="checkbox3">Перевірка ментором та розгорнута відеоконсультація з детальним фідбеком по
+                    кожному пункту та рекомендаціями</label>
+                </div>  
             <br>
             <!-- Кнопка "Отправить" -->
             <button id="send-button" class="bnt-chat" style="width: 300px;">Відправити</button>
